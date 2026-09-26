@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masjid Atlas UK — Find mosques across Britain</title>
+  <meta name="description" content="A curated directory of notable mosques across the United Kingdom, with ratings, facilities, and custom photography." />
+  <link rel="icon" href="images/logo.jpg" id="favicon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-ornament" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <img src="images/logo.jpg" alt="" class="brand-mark" />
+      <span>
+        <strong>Masjid Atlas</strong>
+        <em>United Kingdom</em>
+      </span>
+    </a>
+    <nav>
+      <a href="#directory">Directory</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <img src="images/hero.jpg" alt="A grand mosque at sunset overlooking a British city" class="hero-image" />
+      <div class="hero-veil"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">2,000+ masajid across Britain</p>
+        <h1>Find a mosque near you.</h1>
+        <p class="lede">A curated list of notable UK mosques with community ratings, women’s facilities, education, parking, and more — illustrated with custom photography.</p>
+        <div class="hero-search">
+          <label class="sr-only" for="search">Search mosques</label>
+          <input id="search" type="search" placeholder="Search by name, city or postcode…" autocomplete="off" />
+          <button type="button" id="search-btn">Search</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="stat-count">14</strong><span>featured mosques</span></div>
+          <div><strong>7</strong><span>cities</span></div>
+          <div><strong>4.7</strong><span>avg. rating</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="toolbar" id="directory">
+      <div class="filters">
+        <select id="city-filter"><option value="all">All cities</option></select>
+        <select id="facility-filter"><option value="all">Any facility</option></select>
+        <select id="sort">
+          <option value="rating">Highest rated</option>
+          <option value="name">Name A–Z</option>
+          <option value="capacity">Largest capacity</option>
+          <option value="city">City</option>
+        </select>
+      </div>
+      <div class="view-toggle" role="group" aria-label="View mode">
+        <button type="button" id="view-list" class="active" aria-pressed="true">List</button>
+        <button type="button" id="view-grid" aria-pressed="false">Cards</button>
+      </div>
+    </section>
+    <p class="results-meta" id="results-meta"></p>
+    <section id="mosque-list" class="mosque-list list-view" aria-live="polite"></section>
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">About this guide</p>
+        <h2>A starting point, not a complete census.</h2>
+        <p>Britain is home to around two thousand masajid and prayer rooms. This site features a selection of well-known centres so you can compare facilities at a glance. Ratings are illustrative community scores for demonstration. Always confirm prayer times and access with the mosque itself.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Masjid Atlas UK · Built as a demonstration directory · Images are custom-generated architectural studies, not official photographs.</p>
+  </footer>
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-backdrop" data-close></div>
+    <article class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <button class="drawer-close" type="button" data-close aria-label="Close">×</button>
+      <div id="drawer-body"></div>
+    </article>
+  </div>
+  <script src="images-data-1.js"></script>
+  <script src="images-data-2.js"></script>
+  <script src="images-data-3.js"></script>
+  <script src="images-data-4.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

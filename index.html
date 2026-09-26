@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Masjid Atlas UK — Find mosques across Britain</title>
-  <meta name="description" content="A curated directory of notable mosques across the United Kingdom, with ratings, facilities, and photographs of each masjid." />
+  <meta name="description" content="A curated directory of notable mosques across the United Kingdom, with ratings, facilities, and custom photography." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%23f6f1e6' width='64' height='64' rx='12'/%3E%3Cpath d='M32 10c6 8 14 12 14 22a14 14 0 1 1-28 0c0-10 8-14 14-22z' fill='none' stroke='%231c3a2c' stroke-width='3'/%3E%3Cpath d='M40 16a8 8 0 0 1 8-8' fill='none' stroke='%23c6a15b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +48,7 @@
           <button type="button" id="search-btn">Search</button>
         </div>
         <div class="hero-stats">
-          <div><strong id="stat-count">14</strong><span>featured mosques</span></div>
+          <div><strong id="stat-count">15</strong><span>featured mosques</span></div>
           <div><strong>7</strong><span>cities</span></div>
           <div><strong>4.7</strong><span>avg. rating</span></div>
         </div>
@@ -62,6 +62,11 @@
         </select>
         <select id="facility-filter">
           <option value="all">Any facility</option>
+        </select>
+        <select id="tradition-filter" aria-label="Filter by tradition">
+          <option value="all">Sunni &amp; Shia</option>
+          <option value="sunni">Sunni only</option>
+          <option value="shia">Shia only</option>
         </select>
         <select id="sort">
           <option value="rating">Highest rated</option>
@@ -84,7 +89,7 @@
       <div>
         <p class="eyebrow">About this guide</p>
         <h2>A starting point, not a complete census.</h2>
-        <p>Britain is home to around two thousand masajid and prayer rooms. This site features a selection of well-known centres so you can compare facilities at a glance. Ratings are illustrative community scores for demonstration. Always confirm prayer times and access with the mosque itself.</p>
+        <p>Britain is home to around two thousand masajid and prayer rooms. This site features a selection of well-known Sunni and Shia centres so you can compare facilities at a glance. Each listing is labelled by tradition. Ratings are illustrative community scores for demonstration. Always confirm prayer times and access with the mosque itself.</p>
         <p>Facilities listed include women’s prayer space, wudu, parking, wheelchair access, madrasah, library, funeral services, nikah, and cafés where publicly known.</p>
       </div>
     </section>
